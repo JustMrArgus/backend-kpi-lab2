@@ -4,6 +4,6 @@ const { checkServerHealth } = require("../controllers/healthcheck.controller");
 
 const router = Router();
 
-router.get("/healthcheck", checkServerHealth);
+router.get("/", checkServerHealth);
 
 module.exports = router;

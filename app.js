@@ -6,6 +6,6 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/", healthcheckRoutes);
+app.use("/healthcheck", healthcheckRoutes);
 
 module.exports = app;
