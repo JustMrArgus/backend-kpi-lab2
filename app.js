@@ -1,14 +1,11 @@
 const express = require("express");
 
+const healthcheckRoutes = require("./routes/healthcheck.route");
+
 const app = express();
 
 app.use(express.json());
 
-app.get("/healthcheck", (req, res) => {
-  res.status(200).json({
-    status: "ok",
-    date: new Date().toISOString(),
-  });
-});
+app.use("/", healthcheckRoutes);
 
 module.exports = app;
