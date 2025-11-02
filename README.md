@@ -1,10 +1,10 @@
-# Backend KPI Lab 1
+# Backend KPI Lab 2
 
 **Author:** Oleksandr Rodina, group IM-33
 
 **Every lab builds on the previous one**
 
-**Deployed version:** [https://backend-kpi-lab1.onrender.com/healthcheck](https://backend-kpi-lab1.onrender.com/healthcheck)
+**Deployed version:** [https://backend-kpi-lab2.onrender.com/healthcheck](https://backend-kpi-lab2.onrender.com/healthcheck)
 
 ## Requirements
 
