@@ -2,11 +2,12 @@ const db = require("../data/data");
 
 const createUser = (req, res) => {
   const { name } = req.body;
+  if (!name) {
+    return res.status(400).json({ error: "Name is required" });
+  }
   const newUser = {
     id: db.userIdCounter++,
     name,
-    email,
-    password,
   };
   db.users.push(newUser);
   res.status(201).json(newUser);
